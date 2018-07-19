@@ -1,0 +1,248 @@
+.navbar {
+  padding: 0.5rem 0.5rem !important;
+}
+
+.top-navigation {
+  text-align: left;
+  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+  background: #00B740;
+  padding-top: 5px;
+  position: fixed;
+  color: #fff;
+  line-height: 2em;
+}
+
+.content {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #EAEBED;
+  border-top: 1px solid #596B7B;
+  color: #596B7B;
+  text-align: center;
+  line-height: 3.3em;
+}
+
+.footer-nav {
+  color: #596B7B;
+}
+
+.footer-nav:focus {
+  color: #4587C5;
+}
+
+.footer-nav:hover {
+  color: #4587C5;
+}
+
+.footer-nav .footer-active:hover {
+
+}
+
+.footer-active {
+  color: #4587C5;
+}
+
+.form-card {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #596B7B;
+  border-radius: 5px;
+  height: 200px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.no-blue {
+  color: #596B7B;
+}
+
+.no-blue:hover {
+  color: #596B7B;
+  text-decoration: none;
+}
+
+.no-blue:focus {
+  color: #596B7B;
+  text-decoration: none;
+}
+
+.outer-container {
+  position: relative;
+  height: calc(100vh - 125px);
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.inner-content {
+  margin: 0;
+  position: absolute !important;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-height: calc(100vh - 125px);
+  overflow-y: scroll;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.circle-button {
+  border-radius: 50px;
+  border: none;
+  background-color: #4587C5;
+  color: #fff;
+  height: 40px;
+  width: 120px;
+}
+
+.no-padding {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.scroll-container,
+.scroll-area {
+  height: calc(100vh - 125px);
+}
+
+.scroll-container {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+  scroll-snap-align: start;
+}
+
+.scroll-container,
+.scroll-area {
+  margin: 0 auto;
+}
+
+.scroll-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.scroll-area:nth-of-type(1) {
+  background: #49b293;
+}
+
+.scroll-area:nth-of-type(2) {
+  background: #c94e4b;
+}
+
+.scroll-area:nth-of-type(3) {
+  background: #4cc1be;
+}
+
+.scroll-area:nth-of-type(4) {
+  background: #8360A6;
+}
+
+.scroll-area::-webkit-scrollbar,
+.inner-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* progress bar */
+  .progressbar {
+    margin-bottom: 3rem !important;
+    margin-left: calc(-11vw)
+  }
+
+  .progressbar li {
+      list-style-type: none;
+      float: left;
+      font-size: 12px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      color: #7d7d7d;
+  }
+  .progressbar li:before {
+      width: 20px;
+      height: 20px;
+      content: '';
+      line-height: 17px;
+      border: 2px solid #596B7B;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background-color: white;
+  }
+  .progressbar li.active:before {
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+  }
+  .progressbar li:after {
+      width: 100%;
+      height: 3px;
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      top: 9px;
+      left: -50%;
+      z-index: -1;
+  }
+  .progressbar li:first-child:after {
+      content: none;
+  }
+  .progressbar li.complete {
+      color: #4587C5;
+  }
+  .progressbar li.complete:before {
+      border: 10px solid #4587C5;
+  }
+  .progressbar li.complete + li:after {
+      background-color: #4587C5;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .toggle-style-button-group {
+    margin-top: -8px;
+  }
+
+  .toggle-style-button {
+    border-radius: 0;
+    border: 1px solid rgba(54,64,74, 0.2);
+    text-align: center;
+    background-color: $white;
+    width: 110px;
+    height: 40px;
+  }
+  .toggle-style-button:hover {
+    color: #666666;
+    background-color: #f2f2f2;
+  }
+  .toggle-style-button.active:hover {
+    color: white;
+    background-color: #4587C5;
+  }
+  .toggle-style-button.active {
+    color: white;
+    background-color: #4587C5;
+  }
+  .toggle-style-button:focus {
+    outline: none !important;
+  }
