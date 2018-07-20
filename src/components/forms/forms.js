@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import FormsOuterList from './forms-outer-list';
 import FormFiller from './form-filler';
+import Conversation from './conversation';
 
 class Forms extends Component {
   render() {
@@ -13,6 +14,7 @@ class Forms extends Component {
         <Switch>
           <Route exact path='/forms' component={FormsOuterList} />
           <Route path='/forms/:form_id/new' component={FormFiller} />
+          <Route path='/forms/:form_id/new_conversation' component={Conversation} />
         </Switch>
       </div>
     )  }

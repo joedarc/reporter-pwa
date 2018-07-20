@@ -1,3 +1,10 @@
+@import 'conversation';
+
+.container {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
 .navbar {
   padding: 0.5rem 0.5rem !important;
 }
@@ -10,6 +17,7 @@
   position: fixed;
   color: #fff;
   line-height: 2em;
+  height: 50px;
 }
 
 .content {
@@ -227,7 +235,7 @@
     border-radius: 0;
     border: 1px solid rgba(54,64,74, 0.2);
     text-align: center;
-    background-color: $white;
+    background-color: white;
     width: 110px;
     height: 40px;
   }

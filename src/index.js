@@ -8,6 +8,8 @@ import reducers from './reducers';
 import promise from 'redux-promise';
 import thunk from 'redux-thunk';
 
+require(`../style/style.scss`);
+
 const createStoreWithMiddleware = applyMiddleware(promise, thunk)(createStore);
 
 ReactDOM.render(
