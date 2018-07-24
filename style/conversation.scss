@@ -11,7 +11,7 @@
   word-wrap: break-word;
   border-radius: 20px;
   padding: 7px;
-  margin-bottom: 3px;
+  margin-bottom: 20px;
 }
 
 .system-response-box p {
@@ -20,6 +20,7 @@
 
 .response {
   border-bottom-left-radius: 3px;
+  margin-bottom: 3px;
 }
 
 .user-response {
@@ -47,6 +48,7 @@
 .section-header {
   max-width: 100vw !important;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .small-text {
@@ -113,6 +115,7 @@
   overflow-x: scroll;
   padding: 10px;
   margin: 0;
+  margin-bottom: 20px;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
@@ -143,3 +146,75 @@
 .carousel-item div{
   font-size: 14px;
 }
+
+.message-footer {
+  position: fixed;
+  left: 0;
+  // needs added back when footer is added again
+  // bottom: 50px;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: #EAEBED;
+  color: #596B7B;
+  text-align: center;
+  line-height: 3.3em;
+}
+
+.user-text-field {
+  min-height: 22px;
+  line-height: 22px;
+  outline-width: 0;
+  text-overflow: ellipsis;
+  padding-left: 4px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 0px;
+}
+
+.button-inside{
+  position:relative;
+}
+
+.user-text-field-button {
+  position:absolute;
+  right: 0px;
+  border:none;
+  border-radius:100%;
+  outline:none;
+  text-align:center;
+  font-weight:bold;
+  color: #00B740;
+  margin-top: -9px;
+  background-color: transparent;
+  padding-right: 4px;
+}
+
+.conversation-container,
+.section-container {
+  height: calc(100vh - 90px);
+}
+
+.conversation-container {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y mandatory;
+}
+
+.section-container {
+  scroll-snap-align: start;
+}
+
+// .conversation-container,
+// .section-container {
+//   margin: 0 auto;
+// }
+
+// .section-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }

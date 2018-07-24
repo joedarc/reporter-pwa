@@ -3,6 +3,7 @@ import { Route, Link, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Dashboard from './dashboard/dashboard.js';
 import Forms from './forms/forms.js';
+import Form from '!json-loader!../../assets/json/full_mock_form.json';
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class App extends Component {
     return (
       <div style={{width: '100vw'}}>
         <nav className="top-navigation nav navbar navbar-default navbar-fixed-top">
-          <div className="col-md-12 col-xs-12 text-center">{`${this.props.location.pathname.includes('/forms') && this.props.location.pathname.includes('/new') ? 'CBO' : 'Reseco Forms'}`}</div>
+          <div className="col-md-12 col-xs-12 text-center">{`${this.props.location.pathname.includes('/forms') && this.props.location.pathname.includes('/new') ? Form.title : 'Reseco Forms'}`}</div>
           {this.props.location.pathname.includes('/forms') && this.props.location.pathname.includes('/new') &&
             <div>
               <div>
@@ -43,24 +44,25 @@ class App extends Component {
         </nav>
         <div className="content" style={{marginTop: '50px'}}>
           <Switch>
-            <Route exact path='/' component={Dashboard} />
+            <Route exact path='/' component={Forms} />
             <Route path='/forms' component={Forms} />
           </Switch>
         </div>
-        <div className="footer">
-          <div className="col-md-12 col-xs-12">
-            <Link to={"/"} className={`footer-nav ${this.props.location.pathname == "/" ? 'footer-active' : ''}`}>
-              <div className="col-md-6 col-xs-6">
-                <i className="fa fa-lg fa-home"></i>
-              </div>
-            </Link>
-            <Link to={"/forms"} className={`footer-nav ${this.props.location.pathname.includes('/forms') ? 'footer-active' : ''}`}>
-              <div className="col-md-6 col-xs-6">
-                <i className="fa fa-lg fa-file-text-o"></i>
-              </div>
-            </Link>
-          </div>
-        </div>
+        {// <div className="footer">
+        //   <div className="col-md-12 col-xs-12">
+        //     <Link to={"/"} className={`footer-nav ${this.props.location.pathname == "/" ? 'footer-active' : ''}`}>
+        //       <div className="col-md-6 col-xs-6">
+        //         <i className="fa fa-lg fa-home"></i>
+        //       </div>
+        //     </Link>
+        //     <Link to={"/forms"} className={`footer-nav ${this.props.location.pathname.includes('/forms') ? 'footer-active' : ''}`}>
+        //       <div className="col-md-6 col-xs-6">
+        //         <i className="fa fa-lg fa-file-text-o"></i>
+        //       </div>
+        //     </Link>
+        //   </div>
+        // </div>
+        }
       </div>
     );
   }

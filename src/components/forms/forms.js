@@ -12,12 +12,14 @@ class Forms extends Component {
     return (
       <div className="sub-tab-content">
         <Switch>
+          <Route exact path='/' component={FormsOuterList} />
           <Route exact path='/forms' component={FormsOuterList} />
           <Route path='/forms/:form_id/new' component={FormFiller} />
           <Route path='/forms/:form_id/new_conversation' component={Conversation} />
         </Switch>
       </div>
-    )  }
+    )
+  }
 }
 
 
