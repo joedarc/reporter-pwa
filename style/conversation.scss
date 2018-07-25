@@ -208,13 +208,7 @@
   scroll-snap-align: start;
 }
 
-// .conversation-container,
-// .section-container {
-//   margin: 0 auto;
-// }
-
-// .section-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
+.section-inner-content {
+  max-height: calc(100vh - 90px);
+  overflow-y: scroll;
+}

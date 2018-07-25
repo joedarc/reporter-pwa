@@ -1,0 +1,193 @@
+{
+  "data": {
+    "title": "CBO",
+    "elements": [
+      {
+        "id": 1,
+        "attributes": {
+          "category": "header",
+          "label": "1. Inspection",
+          "order": 1,
+          "metadata": {},
+          "paths": {}
+        }
+      },
+      {
+        "id": 2,
+        "attributes": {
+          "category": "instruction",
+          "label": "Prior to accessing the roof employees perform a work area inspection to determine roof pitch, overhead power, adequate lighting, weather conditions, safe access, pedestrian exposures and to strategize placement of materials and establish a clear path of travel.",
+          "order": 2,
+          "metadata": {},
+          "paths": {}
+        }
+      },
+      {
+        "id": 3,
+        "attributes": {
+          "category": "toggle",
+          "label": "Would you like to add a person?",
+          "order": 3,
+          "metadata": {
+            "value-true": "Yes",
+            "value-false": "No"
+          },
+          "paths": {
+            "value-true": 4,
+            "value-false": 8
+          }
+        }
+      },
+      {
+        "id": 4,
+        "attributes": {
+          "category": "toggle",
+          "label": "Is the person safe?",
+          "order": 4,
+          "metadata": {
+            "value-true": "Safe",
+            "value-false": "Not Safe"
+          },
+          "paths": {
+            "value-true": 3,
+            "value-false": 5
+          }
+        }
+      },
+      {
+        "id": 5,
+        "attributes": {
+          "category": "text",
+          "label": "What is their name?",
+          "order": 5,
+          "metadata": {},
+          "paths": {
+            "input": 6
+          }
+        }
+      },
+      {
+        "id": 6,
+        "attributes": {
+          "category": "text",
+          "label": "Do you have any additional notes?",
+          "order": 6,
+          "metadata": {},
+          "paths": {
+            "input": 7
+          }
+        }
+      },
+      {
+        "id": 7,
+        "attributes": {
+          "category": "toggle",
+          "label": "Would you like to add another person?",
+          "order": 7,
+          "metadata": {
+            "value-true": "Yes",
+            "value-false": "No"
+          },
+          "paths": {
+            "value-true": 4,
+            "value-false": 8
+          }
+        }
+      },
+
+
+      {
+        "id": 8,
+        "attributes": {
+          "category": "header",
+          "label": "2. Protection",
+          "order": 8,
+          "metadata": {},
+          "paths": {}
+        }
+      },
+      {
+        "id": 9,
+        "attributes": {
+          "category": "instruction",
+          "label": "A Safety Zone is established using danger tape around the loading activities to prevent unauthorized people or equipment into the hazard area. Activities are paused when the Safety Zone is compromised until protection can be re-established.",
+          "order": 9,
+          "metadata": {},
+          "paths": {}
+        }
+      },
+      {
+        "id": 10,
+        "attributes": {
+          "category": "toggle",
+          "label": "Would you like to add a person?",
+          "order": 10,
+          "metadata": {
+            "value-true": "Yes",
+            "value-false": "No"
+          },
+          "paths": {
+            "value-true": 11,
+            "value-false": null
+          }
+        }
+      },
+      {
+        "id": 11,
+        "attributes": {
+          "category": "toggle",
+          "label": "Is the person safe?",
+          "order": 11,
+          "metadata": {
+            "value-true": "Safe",
+            "value-false": "Not Safe"
+          },
+          "paths": {
+            "value-true": 10,
+            "value-false": 12
+          }
+        }
+      },
+      {
+        "id": 12,
+        "attributes": {
+          "category": "text",
+          "label": "What is their name?",
+          "order": 12,
+          "metadata": {},
+          "paths": {
+            "input": 13
+          }
+        }
+      },
+      {
+        "id": 13,
+        "attributes": {
+          "category": "text",
+          "label": "Do you have any additional notes?",
+          "order": 13,
+          "metadata": {},
+          "paths": {
+            "input": 14
+          }
+        }
+      },
+      {
+        "id": 14,
+        "attributes": {
+          "category": "toggle",
+          "label": "Would you like to add another person?",
+          "order": 14,
+          "metadata": {
+            "value-true": "Yes",
+            "value-false": "No"
+          },
+          "paths": {
+            "value-true": 11,
+            "value-false": null
+          }
+        }
+      }
+    ]
+  }
+}

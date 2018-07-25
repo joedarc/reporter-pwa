@@ -3,7 +3,7 @@ import { Route, Link, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Dashboard from './dashboard/dashboard.js';
 import Forms from './forms/forms.js';
-import Form from '!json-loader!../../assets/json/full_mock_form.json';
+import Form from '!json-loader!../../assets/json/script.json';
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div style={{width: '100vw'}}>
         <nav className="top-navigation nav navbar navbar-default navbar-fixed-top">
-          <div className="col-md-12 col-xs-12 text-center">{`${this.props.location.pathname.includes('/forms') && this.props.location.pathname.includes('/new') ? Form.title : 'Reseco Forms'}`}</div>
+          <div className="col-md-12 col-xs-12 text-center">{`${this.props.location.pathname.includes('/forms') && this.props.location.pathname.includes('/new') ? Form.data.title : 'Reseco Forms'}`}</div>
           {this.props.location.pathname.includes('/forms') && this.props.location.pathname.includes('/new') &&
             <div>
               <div>
