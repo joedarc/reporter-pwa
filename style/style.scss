@@ -1,3 +1,10 @@
+@import 'conversation';
+
+.container {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
 .navbar {
   padding: 0.5rem 0.5rem !important;
 }
@@ -10,11 +17,13 @@
   position: fixed;
   color: #fff;
   line-height: 2em;
+  height: 50px;
 }
 
 .content {
   margin: 0 auto;
-  margin-bottom: 50px;
+  // needs to be 85px when footer is in
+  margin-bottom: 35px;
   line-height: 1.6em;
 }
 
@@ -227,7 +236,7 @@
     border-radius: 0;
     border: 1px solid rgba(54,64,74, 0.2);
     text-align: center;
-    background-color: $white;
+    background-color: white;
     width: 110px;
     height: 40px;
   }

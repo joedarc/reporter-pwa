@@ -1,0 +1,151 @@
+{
+  "title": "CBO",
+  "elements": [
+    {
+      "id": 1,
+      "parent-id": null,
+      "category": "section",
+      "title": "1. Inspection",
+      "subtitle": "Prior to accessing the roof employees perform a work area inspection to determine roof pitch, overhead power, adequate lighting, weather conditions, safe access, pedestrian exposures and to strategize placement of materials and establish a clear path of travel.",
+      "repeatable": false,
+      "order": 1,
+      "elements": [
+        {
+          "id": 2,
+          "parent-id": 1,
+          "category": "toggle",
+          "title": "Would you like to add a person?",
+          "order": 1,
+          "metadata": {
+            "value-true": "Yes",
+            "value-false": "No"
+          },
+          "conditions": {
+            "value-true": 3,
+            "value-false": null
+          },
+          "value": null
+        },
+        {
+          "id": 3,
+          "parent-id": 1,
+          "category": "section",
+          "title": null,
+          "repeatable": true,
+          "order": 2,
+          "elements": [
+            {
+              "id": 4,
+              "parent-id": 3,
+              "category": "toggle",
+              "title": "Is the person safe?",
+              "order": 1,
+              "metadata": {
+                "value-true": "Safe",
+                "value-false": "Not Safe"
+              },
+              "conditions": {
+                "value-true": 2,
+                "value-false": 5
+              },
+              "value": null
+            },
+            {
+              "id": 5,
+              "parent-id": 3,
+              "category": "text",
+              "title": "What is their name?",
+              "order": 2,
+              "metadata": {},
+              "conditions": {},
+              "value": null
+            },
+            {
+              "id": 12,
+              "parent-id": 3,
+              "category": "text",
+              "title": "Do you have any additional notes?",
+              "order": 3,
+              "metadata": {},
+              "conditions": {},
+              "value": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parent-id": null,
+      "category": "section",
+      "title": "2. Protection",
+      "subtitle": "A Safety Zone is established using danger tape around the loading activities to prevent unauthorized people or equipment into the hazard area. Activities are paused when the Safety Zone is compromised until protection can be re-established.",
+      "repeatable": false,
+      "order": 2,
+      "elements": [
+        {
+          "id": 7,
+          "parent-id": 6,
+          "category": "toggle",
+          "title": "Would you like to add a person?",
+          "order": 1,
+          "metadata": {
+            "value-true": "Yes",
+            "value-false": "No"
+          },
+          "conditions": {
+            "value-true": 8,
+            "value-false": null
+          },
+          "value": null
+        },
+        {
+          "id": 8,
+          "parent-id": 6,
+          "category": "section",
+          "title": null,
+          "repeatable": true,
+          "order": 2,
+          "elements": [
+            {
+              "id": 9,
+              "parent-id": 8,
+              "category": "toggle",
+              "title": "Is the person safe?",
+              "order": 1,
+              "metadata": {
+                "value-true": "Safe",
+                "value-false": "Not Safe"
+              },
+              "conditions": {
+                "value-true": 7,
+                "value-false": 10
+              },
+              "value": null
+            },
+            {
+              "id": 10,
+              "parent-id": 8,
+              "category": "text",
+              "title": "What is their name?",
+              "order": 2,
+              "metadata": {},
+              "conditions": {},
+              "value": null
+            },
+            {
+              "id": 11,
+              "parent-id": 8,
+              "category": "text",
+              "title": "Do you have any additional notes?",
+              "order": 3,
+              "metadata": {},
+              "conditions": {},
+              "value": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

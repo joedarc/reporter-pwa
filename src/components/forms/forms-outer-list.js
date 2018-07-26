@@ -11,7 +11,7 @@ class FormsOuterList extends Component {
           {[0, 1, 2, 3].map((form) => {
             return (
               <div key={`outer-form-${form}`} className="col-md-6 col-xs-6" style={{marginBottom: '15px'}}>
-                <Link to={`/forms/${form}/new`} className="no-blue">
+                <Link to={`/forms/${form}/new_conversation`} className="no-blue">
                   <div className="form-card">
                     <h5>Critical Behavior Observation</h5>
                     {[0, 1, 2].map((i) => {

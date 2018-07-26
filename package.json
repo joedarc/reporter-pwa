@@ -21,7 +21,10 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
+    "css-loader": "^1.0.0",
+    "json-loader": "^0.5.7",
     "lodash": "^3.10.1",
+    "node-sass": "^4.9.2",
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-redux": "5.0.7",
@@ -29,6 +32,8 @@
     "react-router-dom": "^4.3.1",
     "redux": "4.0.0",
     "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "title": "CBO",
+  "elements": [
+    {
+      "id": 1,
+      "category": "section",
+      "type": "system",
+      "title": "1. Inspection",
+      "subtitle": "Prior to accessing the roof employees perform a work area inspection to determine roof pitch, overhead power, adequate lighting, weather conditions, safe access, pedestrian exposures and to strategize placement of materials and establish a clear path of travel.",
+      "repeatable": false,
+      "order": 1,
+      "elements": [
+        {
+          "id": 2,
+          "parent-id": 1,
+          "category": "toggle",
+          "title": "Would you like to add a person?",
+          "order": 1,
+          "metadata": {
+            "value-true": "Yes",
+            "value-false": "No"
+          },
+          "conditions": {
+            "value-true": 3,
+            "value-false": null
+          },
+          "value": null
+        }
+      ]
+    }
+  ]
+}
