@@ -1,0 +1,13 @@
+{
+  "short_name": "Reporter",
+  "name": "RiskLimiter Reporter",
+  "icons": [{
+    "src": "images/touch/homescreen.png",
+    "sizes": "72x72 96x96 128x128 256x256",
+    "type": "image/png"
+  }],
+  "start_url": "./forms",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

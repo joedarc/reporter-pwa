@@ -173,6 +173,7 @@
   margin-left: 5px;
   margin-right: 5px;
   padding-right: 0px;
+  width: 90vw;
 }
 
 .button-inside{
@@ -181,14 +182,14 @@
 
 .user-text-field-button {
   position:absolute;
-  right: 0px;
+  right: -9px;
   border:none;
   border-radius:100%;
   outline:none;
   text-align:center;
   font-weight:bold;
   color: #00B740;
-  margin-top: -9px;
+  margin-top: -2px;
   background-color: transparent;
   padding-right: 4px;
 }
@@ -201,7 +202,7 @@
 .conversation-container {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-type: y mandatory;
+  // scroll-snap-type: y mandatory;
 }
 
 .section-container {
@@ -211,4 +212,8 @@
 .section-inner-content {
   max-height: calc(100vh - 90px);
   overflow-y: scroll;
+}
+
+.disabled {
+  opacity: 0.5;
 }
